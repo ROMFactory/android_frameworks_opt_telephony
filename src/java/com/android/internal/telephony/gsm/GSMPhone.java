@@ -1589,7 +1589,7 @@ public class GSMPhone extends PhoneBase {
     @Override
     public boolean isCspPlmnEnabled() {
         IccRecords r = mIccRecords.get();
-        return (r != null) ? r.isCspPlmnEnabled() : false;
+        return (r != null) ? r.isCspPlmnEnabled() : true;
     }
 
     private void registerForSimRecordEvents() {
